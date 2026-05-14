@@ -29,7 +29,7 @@ import chain3 from './assets/chain3.jpg';
 import chain4 from './assets/chain4.jpg';
 
 const initialProducts = [
-  { id: 1, name: "Simple Chain", price: "9.99", image: Image1, gallery: [Image1, chain1, chain2], desc: "Pure magic." },
+  { id: 1, name: "Simple Chain Archanagit add .", price: "9.99", image: Image1, gallery: [Image1, chain1, chain2], desc: "Pure magic." },
   { id: 2, name: "Bracelets", price: "12.99", image: Image2, gallery: [Image2, bracelets1, bracelets2], desc: "Simple Bracelets." },
   { id: 3, name: "Ring", price: "7.99", image: Image3, gallery: [Image3, ring1, ring2, ring3], desc: "Cute and classy." },
   { id: 4, name: "Royal Chain", price: "15.00", image: Image4, gallery: [Image4, chain1, chain2], desc: "Relatable vibe!" },
@@ -81,6 +81,7 @@ const ProductDetailPage = ({ addToCart }) => {
     "5.5 X 5.5": 10.00
   };
 
+
   const [selectedSize, setSelectedSize] = useState("3 X 3");
   const [mainImg, setMainImg] = useState(product ? product.image : null);
 
@@ -88,7 +89,7 @@ const ProductDetailPage = ({ addToCart }) => {
 
   // Final price 
   const currentPrice = (parseFloat(product.price) + sizePrices[selectedSize]).toFixed(2);
-
+ 
   return (
     <div className="product-detail-page">
       <div className="back-nav">
